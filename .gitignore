@@ -129,3 +129,5 @@ src/test/kotlin/RunTerminal.kt
 /gradlew.bat
 /settings.gradle.kts
 /src/main/resources/
+/gradle/
+/plugins/

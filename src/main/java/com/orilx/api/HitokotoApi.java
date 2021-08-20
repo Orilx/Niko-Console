@@ -21,8 +21,10 @@ public class HitokotoApi {
     public static String getJSXH(){
         String JSON = NetworkUtil.getJSON("https://cdn.ipayy.net/says/api.php?type=shehui&encode=json");
         JSONObject jo = JSONObject.parseObject(JSON);
+        if(JSON.isEmpty()){
+            return "出错了！不是Niko的问题！";
+        }
         return jo.getString("say");
-
     }
 
     public static String getHitokoto(){

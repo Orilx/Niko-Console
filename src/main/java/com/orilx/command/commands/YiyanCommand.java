@@ -31,11 +31,11 @@ public class YiyanCommand extends Command {
      */
     @Override
     public void runCommand(MessageEvent event) {
-        if(event.getMessage().contentToString().contains("/精神小伙")){
-            String msg =HitokotoApi.getJSXH();
-            MessageManager.sendMessage(event,msg);
-            return;
-        }
+//        if(event.getMessage().contentToString().contains("/精神小伙")){
+//            String msg =HitokotoApi.getJSXH();
+//            MessageManager.sendMessage(event,msg);
+//            return;
+//        }
         runCommandWithParam(event, ProfileUtil.HITOKOTO_DEFAULT_PARAMS);
     }
 

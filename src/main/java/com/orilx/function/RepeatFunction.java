@@ -25,7 +25,7 @@ public class RepeatFunction extends Function{
     //过滤规则
     private final Pattern miraiCode_1 = Pattern.compile("^\\[mirai:((?!face).)*$");
     private final Pattern miraiCode_2 = Pattern.compile("^\\[mirai:((?!image).)*$");
-    private final Pattern supposedMessage = Pattern.compile("(请升级到最新版本)|(使用最新版手机QQ)");
+    private final Pattern supposedMessage = Pattern.compile("(请升级到最新版本)|(使用最新版手机QQ)|(QQ红包)");
 
     /**
      * 检测是否可以复读
@@ -64,7 +64,7 @@ public class RepeatFunction extends Function{
 
     public void function(GroupMessageEvent event){
         fromGroup = event.getGroup().getId();
-        //过滤除纯文本外的所有类型消息
+        //过滤消息
         if(!isText(event.getMessage().serializeToMiraiCode())){
             cnt = 0;
             return;

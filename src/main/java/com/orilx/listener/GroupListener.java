@@ -34,7 +34,6 @@ public class GroupListener{
         commandSets.put(CommandSets.COMMAND_FOR_FUN,new FunCommand());
         commandSets.put(CommandSets.COMMAND_SETU,new SetuCommand());
         commandSets.put(CommandSets.COMMAND_YIYAN,new YiyanCommand());
-        commandSets.put(CommandSets.COMMAND_JSXH,new YiyanCommand());
         commandSets.put(CommandSets.COMMAND_BING,new BingCommand());
         commandSets.put(CommandSets.COMMAND_MUSIC,new MusicCommand());
         commandSets.put(CommandSets.COMMAND_TBOTTLE,new BottleTCommand());

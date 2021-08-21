@@ -5,7 +5,6 @@ public enum CommandSets {
     COMMAND_HELP("/帮助"),
     COMMAND_SETU("/来点色图"),
     COMMAND_YIYAN("/一言"),
-    COMMAND_JSXH("/精神小伙"),
     COMMAND_MUSIC("/点歌"),
 //    COMMAND_TRANSLATE("/翻译"),
     COMMAND_FOR_FUN("/营业"),
